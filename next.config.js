@@ -1,7 +1,8 @@
 module.exports = {
   env: {
-    API_KEY: process.env.SHOPIFY_API_KEY,
-    HOST: process.env.HOST,
+    NEXT_PUBLIC_SHOPIFY_API_KEY: process.env.NEXT_PUBLIC_SHOPIFY_API_KEY,
+    NEXT_PUBLIC_HOST: process.env.NEXT_PUBLIC_HOST,
+    NEXT_PUBLIC_SHOPIFY_API_SECRET: process.env.NEXT_PUBLIC_SHOPIFY_API_SECRET,
   },
 
   async redirects() {

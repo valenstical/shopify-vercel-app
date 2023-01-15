@@ -15,7 +15,7 @@ export default authenticateShopifyAPI(async function handler(req, res) {
     return;
   }
 
-  const search = new URL(`${process.env.HOST}${req.url}`).search
+  const search = new URL(`${process.env.NEXT_PUBLIC_HOST}${req.url}`).search;
 
   const options = {
     method: req.method,

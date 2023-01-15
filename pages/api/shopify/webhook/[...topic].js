@@ -18,7 +18,7 @@ const isVerifiedWebhookRequest = (req) => {
   }
 
   const actualHash = crypto
-    .createHmac("sha256", process.env.SHOPIFY_API_SECRET)
+    .createHmac("sha256", process.env.NEXT_PUBLIC_SHOPIFY_API_SECRET)
     .update(req.rawBody)
     .digest("base64");
 
